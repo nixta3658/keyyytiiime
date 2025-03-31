@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=no">
+    <title>Ключ времени</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/page_1.css">
+    <link rel="stylesheet" href="css/page_2.css">
+    <link rel="stylesheet" href="css/page_2-1.css">
+    <link rel="stylesheet" href="css/page_2-2.css">
+    <link rel="stylesheet" href="css/page_2-3.css">
+    <link rel="stylesheet" href="css/page_3.css">
+</head>
+<body>
+    <!-- Страница 1 - Вертикальная с двумя секциями -->
+    <div id="page-1" class="page-container">
+        <!-- Секция 1 - Основная первая секция -->
+        <div id="section-1" class="section" style="background-image: url('img/background_1_items/BG.svg'); background-size: cover; background-position: center;">
+            <div class="warning-container">
+                <img src="img/background_1_items/warning_item.svg" alt="Предупреждение" class="warning-icon">
+                <h1 class="warning-text futuristic-text">Вы находитесь на временной границе эр</h1>
+                <p class="warning-description">Продолжая пользование ресурсом, <br>Вы соглашаетесь и принимаете кодекс этики путешествия между эпохами.</p>
+            </div>
+            
+            <img src="img/background_1_items/btn_off.svg" alt="Подтвердить готовность" class="main-button disabled" id="confirmButton">
+            
+            <div class="terms-link futuristic-text" id="termsLink">Но перед этим ознакомьтесь с кодексом</div>
+        </div>
+
+        <!-- Секция 2 - Получение талона -->
+        <div id="section-1-2" class="section">
+            <h2 class="get-ticket-title futuristic-text">Получите талон</h2>
+            <p class="ticket-instruction description">[нажмите на кнопку]</p>
+            
+            <div class="arrows-container">
+                <img src="img/background_1-2_items/arrow_1.svg" alt="Стрелка 1" class="arrow" id="arrow1">
+                <img src="img/background_1-2_items/arrow_2.svg" alt="Стрелка 2" class="arrow" id="arrow2">
+                <img src="img/background_1-2_items/arrow_3.svg" alt="Стрелка 3" class="arrow" id="arrow3">
+            </div>
+            
+            <img src="img/background_1-2_items/vending.svg" alt="Автомат" class="vending-machine">
+            
+            <img src="img/background_1-2_items/ticket_1.svg" alt="Талон 1" class="ticket" id="ticket1">
+            <img src="img/background_1-2_items/ticket_2.svg" alt="Талон 2" class="ticket" id="ticket2">
+            <img src="img/background_1-2_items/ticket_3.svg" alt="Талон 3" class="ticket" id="ticket3">
+            
+            <div class="button-container" id="ticketButton">
+                <img src="img/background_1-2_items/btn_non-click.svg" alt="Кнопка" class="btn-non-click" id="btnNonClick">
+                <img src="img/background_1-2_items/btn-click.svg" alt="Кнопка нажата" class="btn-click hidden" id="btnClick">
+            </div>
+            
+            <img src="img/background_1-2_items/arrow_to_next.svg" alt="Далее" class="next-arrow hidden" id="nextArrow">
+        </div>
+    </div>
+
+    <!-- Страница 1-1 - Кодекс (отдельная страница) -->
+    <div id="page-1-1" class="page-container hidden" style="background-image: url('img/background_1-1_items/BG.svg'); background-size: cover; background-position: center;">
+        <img src="img/background_1-1_items/white_block.svg" alt="Фон для текста" class="white-block">
+        <img src="img/background_1-1_items/white_stick.svg" alt="Панель заголовка" class="white-stick">
+        
+        <img src="img/background_1-1_items/btn_close.svg" alt="Закрыть" class="close-btn" id="closeCodex">
+        
+        <h2 class="ethics-title futuristic-text">Кодекс этики путешествия между эпохами</h2>
+        
+        <div class="ethics-content">
+            <p>Эти правила помогут минимизировать негативные последствия путешествий во времени и сохранить целостность как истории, так и человеческих отношений</p>
+            <br><br>
+            
+            <div class="ethics-item">
+                <div class="ethics-item-title"><span class="ethics-item-number">1.</span> Не вмешивайтесь в ключевые исторические события</div>
+                <div class="ethics-item-description">Избегайте действий, которые могут изменить ход истории, особенно тех, которые приводят к значительным последствиям.</div>
+            </div>
+            
+            <div class="ethics-item">
+                <div class="ethics-item-title"><span class="ethics-item-number">2.</span> Сохраняйте анонимность</div>
+                <div class="ethics-item-description">Не раскрывайте свое происхождение и не привлекайте внимание к своему времени, чтобы избежать создания парадоксов.</div>
+            </div>
+            
+            <div class="ethics-item">
+                <div class="ethics-item-title"><span class="ethics-item-number">3.</span> Сохраняйте экосистему</div>
+                <div class="ethics-item-description">Не вмешивайтесь в природу, чтобы не навредить экосистеме прошлого.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Страница 2 - Вертикальная с четырьмя секциями -->
+    <div id="page-2" class="page-container hidden">
+        <!-- Секция 1 - Ввод кода -->
+        <div id="section-2-1" class="section" style="background-image: url('img/background_2_items/BG.svg'); background-size: cover; background-position: center;">
+            
+            <!-- Контейнер для отображения вводимого кода -->
+            <div class="code-input-container">
+                <h2 class="access-title futuristic-text">ПРИСТУПАЕМ...</h2>
+                <p class="access-instruction description">[введите код с талона]</p>
+                <div class="code-input-display" id="codeDisplay"></div>
+            </div>
+            
+            <!-- Сообщение об ошибке -->
+            <div class="error-message" id="errorMessage">Неверный код. Попробуйте еще раз.</div>
+            
+            <!-- Цифровая клавиатура -->
+            <div class="numpad-container" id="numpadContainer">
+                <!-- Кнопки 1-9 -->
+                <div class="numpad-button" data-value="1">
+                    <img src="img/background_2_items/btn_non-clicked/num_1.svg" alt="1" class="numpad-btn-non-clicked">
+                    <img src="img/background_2_items/btn_clicked/num_1.svg" alt="1" class="numpad-btn-clicked">
+                </div>
+                <div class="numpad-button" data-value="2">
+                    <img src="img/background_2_items/btn_non-clicked/num_2.svg" alt="2" class="numpad-btn-non-clicked">
+                    <img src="img/background_2_items/btn_clicked/num_2.svg" alt="2" class="numpad-btn-clicked">
+                </div>
+                <div class="numpad-button" data-value="3">
+                    <img src="img/background_2_items/btn_non-clicked/num_3.svg" alt="3" class="numpad-btn-non-clicked">
+                    <img src="img/background_2_items/btn_clicked/num_3.svg" alt="3" class="numpad-btn-clicked">
+                </div>
+                <div class="numpad-button" data-value="4">
+                    <img src="img/background_2_items/btn_non-clicked/num_4.svg" alt="4" class="numpad-btn-non-clicked">
+                    <img src="img/background_2_items/btn_clicked/num_4.svg" alt="4" class="numpad-btn-clicked">
+                </div>
+                <div class="numpad-button" data-value="5">
+                    <img src="img/background_2_items/btn_non-clicked/num_5.svg" alt="5" class="numpad-btn-non-clicked">
+                    <img src="img/background_2_items/btn_clicked/num_5.svg" alt="5" class="numpad-btn-clicked">
+                </div>
+                <div class="numpad-button" data-value="6">
+                    <img src="img/background_2_items/btn_non-clicked/num_6.svg" alt="6" class="numpad-btn-non-clicked">
+                    <img src="img/background_2_items/btn_clicked/num_6.svg" alt="6" class="numpad-btn-clicked">
+                </div>
+                <div class="numpad-button" data-value="7">
+                    <img src="img/background_2_items/btn_non-clicked/num_7.svg" alt="7" class="numpad-btn-non-clicked">
+                    <img src="img/background_2_items/btn_clicked/num_7.svg" alt="7" class="numpad-btn-clicked">
+                </div>
+                <div class="numpad-button" data-value="8">
+                    <img src="img/background_2_items/btn_non-clicked/num_8.svg" alt="8" class="numpad-btn-non-clicked">
+                    <img src="img/background_2_items/btn_clicked/num_8.svg" alt="8" class="numpad-btn-clicked">
+                </div>
+                <div class="numpad-button" data-value="9">
+                    <img src="img/background_2_items/btn_non-clicked/num_9.svg" alt="9" class="numpad-btn-non-clicked">
+                    <img src="img/background_2_items/btn_clicked/num_9.svg" alt="9" class="numpad-btn-clicked">
+                </div>
+                <!-- Кнопка 0 -->
+                <div class="numpad-button" data-value="0">
+                    <img src="img/background_2_items/btn_non-clicked/num_0.svg" alt="0" class="numpad-btn-non-clicked">
+                    <img src="img/background_2_items/btn_clicked/num_0.svg" alt="0" class="numpad-btn-clicked">
+                </div>
+            </div>
+            
+            <!-- Навигационные стрелки -->
+            <div class="navigation-arrows">
+                <img src="img/background_2_items/arrow_back.svg" alt="Назад" class="arrow-back" id="arrowBack">
+                <img src="img/background_2_items/arrow_next.svg" alt="Вперед" class="arrow-next hidden" id="arrowNext">
+            </div>
+        </div>
+
+        <!-- Секция 2 - Перенаправление во времени -->
+        <div id="section-2-2" class="section" style="background-image: url('img/background_2-1_items/BG.svg'); background-size: cover; background-position: center;">
+            <h2 class="redirect-title futuristic-text">ИНСТРУКТАЖ</h2>
+            <p class="redirect-description description">Вы будете перенаправлены на</p>
+            
+            <!-- Блоки для ввода цифр -->
+            <div class="number-blocks-container" id="numberBlocksContainer">
+                <div class="number-block" data-index="0">
+                    <img src="img/background_2-1_items/white_block_for_num.svg" alt="Блок для цифры">
+                    <div class="number-display"></div>
+                </div>
+                <div class="number-block" data-index="1">
+                    <img src="img/background_2-1_items/white_block_for_num.svg" alt="Блок для цифры">
+                    <div class="number-display"></div>
+                </div>
+                <div class="number-block" data-index="2">
+                    <img src="img/background_2-1_items/white_block_for_num.svg" alt="Блок для цифры">
+                    <div class="number-display"></div>
+                </div>
+                <div class="number-block" data-index="3">
+                    <img src="img/background_2-1_items/white_block_for_num.svg" alt="Блок для цифры">
+                    <div class="number-display"></div>
+                </div>
+                <div class="number-block" data-index="4">
+                    <img src="img/background_2-1_items/white_block_for_num.svg" alt="Блок для цифры">
+                    <div class="number-display"></div>
+                </div>
+            </div>
+            
+            <p class="years-ago-text description">лет назад</p>
+            
+            <!-- Стрелка для перехода на следующую секцию -->
+            <img src="img/background_2-1_items/arrow_next.svg" alt="Далее" class="next-arrow-2-1" id="nextArrow2-1">
+        </div>
+
+        <!-- Секция 3 - Головоломка с ключом -->
+        <div id="section-2-3" class="section">
+            <!-- Замочная скважина в центре -->
+            <div class="keyhole-container">
+                <img src="img/background_2-2_items/for_key_close.svg" alt="Замочная скважина" class="keyhole-closed" id="keyholeClosed">
+                <img src="img/background_2-2_items/for_key_open.svg" alt="Открытая замочная скважина" class="keyhole-open" id="keyholeOpen">
+            </div>
+            
+            <!-- Область для размещения пазлов -->
+            <div class="puzzle-area">
+                <!-- Перетаскиваемые пазлы -->
+                <img src="img/background_2-2_items/puzless/puz_1.svg" alt="Пазл 1" class="puzzle-piece puzzle-1">
+                <img src="img/background_2-2_items/puzless/puz_2.svg" alt="Пазл 2" class="puzzle-piece puzzle-2">
+                <img src="img/background_2-2_items/puzless/puz_3.svg" alt="Пазл 3" class="puzzle-piece puzzle-3">
+                <img src="img/background_2-2_items/puzless/puz_4.svg" alt="Пазл 4" class="puzzle-piece puzzle-4">
+                <img src="img/background_2-2_items/puzless/puz_5.svg" alt="Пазл 5" class="puzzle-piece puzzle-5">
+                <img src="img/background_2-2_items/puzless/puz_6.svg" alt="Пазл 6" class="puzzle-piece puzzle-6">
+                <img src="img/background_2-2_items/puzless/puz_7.svg" alt="Пазл 7" class="puzzle-piece puzzle-7">
+                <img src="img/background_2-2_items/puzless/puz_8.svg" alt="Пазл 8" class="puzzle-piece puzzle-8">
+                
+                <!-- Ключ -->
+                <img src="img/background_2-2_items/key.svg" alt="Ключ" class="key" id="key">
+            </div>
+            
+            <!-- Инструкция -->
+            <p class="drag-instruction description" id="dragInstruction">[перетащите ключ в замочную скважину, чтобы пройти дальше]</p>
+        </div>
+
+        <!-- Секция 4 - Загрузка -->
+        <div id="section-2-4" class="section" style="background-image: url('img/background_2-3_items/BG.svg'); background-size: cover; background-position: center;">
+            <h2 class="loading-title futuristic-text">ПОГРУЖЕНИЕ...</h2>
+            <p class="loading-description description">будьте осторожны,<br>раскрывая загадки прошлого !</p>
+            
+            <!-- Слайдер загрузки -->
+            <div class="slider-container">
+                <img src="img/background_2-3_items/line.svg" alt="Линия ползунка" class="slider-line">
+                <input type="range" min="0" max="100" value="0" class="slider-range" id="sliderRange">
+                <div class="slider-progress" id="sliderProgress"></div>
+                <img src="img/background_2-3_items/polzunok.svg" alt="Ползунок" class="slider-thumb" id="sliderThumb">
+            </div>
+            
+            <!-- Навигационные стрелки -->
+            <div class="navigation-arrows">
+                <img src="img/background_2-3_items/arrow_back.svg" alt="Назад" class="arrow-back" id="arrowBack2-3">
+                <img src="img/background_2-3_items/arrow_next.svg" alt="Вперед" class="arrow-next hidden" id="arrowNext2-3">
+            </div>
+        </div>
+    </div>
+
+    <!-- Страница 3 - Вертикальная с секциями -->
+    <div id="page-3" class="page-container hidden">
+        <!-- Секция 1 - Охота -->
+        <div id="section-3-1" class="section" style="background-image: url('img/background_3_items/BG.svg'); background-size: cover; background-position: center;">
+            <h2 class="hunt-title futuristic-text">ВЫ НА МЕСТЕ</h2>
+            <p class="hunt-instruction description">произведите охоту</p>
+            
+
+            
+            <!-- Черная строка с человечками -->
+            <div class="moving-line">
+                <!-- Кактусы как декорации -->
+                <img src="img/background_3_items/cactus.svg" alt="Кактус 1" class="cactus-decor cactus-1">
+                <img src="img/background_3_items/cactus1.svg" alt="Кактус 2" class="cactus-decor cactus-2">
+                <img src="img/background_3_items/Stroke.svg" alt="Черная строка" class="stroke-line">
+                <img src="img/background_3_items/people.svg" alt="Человечки" class="people">
+                <img src="img/background_3_items/Cactus's_stroke.svg" alt="Кактус с контуром" class="cactus-stroke">
+                <div class="mamont-container">
+                    <img src="img/background_3_items/mamont.svg" alt="Мамонт" class="mamont" id="mamont">
+                    <img src="img/background_3_items/Skeleton.svg" alt="Скелет" class="skeleton hidden" id="skeleton">
+                </div>
+            </div>
+            
+            <!-- Стрелка назад -->
+            <div class="navigation-arrows">
+                <img src="img/background_3_items/arrow_back.svg" alt="Назад" class="arrow-back-pg3" id="arrowBack3">
+            </div>
+        </div>
+
+        <!-- Секция 2 - Пример другой секции -->
+        <div id="section-3-2" class="section">
+            <h2 class="section-3-2-title description">[оставьте след и послание потомкам]</h2>
+            <!-- контейнер для ввода текста -->
+            <div class="message-container">
+                <!-- следы -->
+                <img src="img/background_3-1_items/hands_group.svg" alt="Следы" class="hand" id="hand_shade">
+                <!-- текст -->
+                <div class="message-input-container" >
+                    <!-- фон -->
+                    <img src="img/background_3-1_items/white_block.svg" alt="Фон для сообщения" class="message-background">
+                    <!-- текст -->
+                    <div class="message-text" id="messageText1">Дорогие потомки, запомните...</div>
+                    <!-- Скрытый текст -->
+                    <div class="message-text-black hidden" id="messageText2">Дорогие потомки, запомните...</div>
+                    <!-- ввод текста -->
+                    <textarea class="message-input description" id="messageInput" style="opacity: 100; position: absolute; border: none; outline: none; resize: none; overflow: auto;"></textarea>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Секция 3 - Новая секция -->
+        <div id="section-3-3" class="section" style="background-image: url('img/background_3-2_items/BG.svg'); background-size: cover; background-position: center;">
+            <h2 class="section-3-3-title description">[Перетащите еду к огню для ее приготовления]</h2>
+            
+            <!-- Человечки -->
+            <img src="img/background_3-2_items/people_1.svg" alt="Человечек 1" class="human-1">
+            <img src="img/background_3-2_items/people_2.svg" alt="Человечек 2" class="human-2">
+            
+            <!-- Контейнер для перемещаемых элементов -->
+            <div class="draggable-items-container">
+                <!-- Перемещаемые элементы -->
+                <img src="img/background_3-2_items/Eat_1.svg" alt="Еда 1" class="draggable-item draggable-item-1" id="draggableItem1">
+                <img src="img/background_3-2_items/Eat_2.svg" alt="Еда 2" class="draggable-item draggable-item-2" id="draggableItem2">
+                <img src="img/background_3-2_items/Eat_3.svg" alt="Еда 3" class="draggable-item draggable-item-3" id="draggableItem3">
+                
+                <!-- Статичный элемент -->
+                <img src="img/background_3-2_items/Fire.svg" alt="Огонь" class="fire-static" id="fire-static-id">
+            </div>
+        </div>
+        
+        <!-- Секция 4 - Ночное небо -->
+        <div id="section-3-4" class="section" style="background-image: url('img/background_3-3_items/BG.svg'); background-size: cover; background-position: center;">
+            <h2 id="night-sky-title" class="night-sky-title futuristic-text">НАСЛАДИТЕСЬ НОЧНЫМ НЕБОМ</h2>
+            <p id="night-sky-description" class="night-sky-description description">[наши предки наблюдали за тем же небом, которое видим мы]</p>
+            <h3 id="goodbye-text" class="goodbye-text futuristic-text">ПОРА ВОЗВРАЩАТЬСЯ ДОМОЙ...</h3>
+            
+            <!-- Контейнер автора -->
+            <div id="author-container" class="author-container">
+                <img id="author-img-1" src="img/background_3-3_items/Author.svg" alt="Автор изображение 1" class="author-img-1">
+                <img id="author-img-2" src="img/background_3-3_items/Star_1.svg" alt="Автор изображение 2" class="author-img-2">
+                <p id="author-text" class="author-text description hidden"><span class="author-label">Автор: </span><br><span class="author-name">Гаврилова Анастасия</span></p>
+            </div>
+            
+            <!-- Контейнер группы -->
+            <div id="group-container" class="group-container">
+                <img id="group-img-1" src="img/background_3-3_items/Group.svg" alt="Группа изображение 1" class="group-img-1">
+                <img id="group-img-2" src="img/background_3-3_items/Star_2.svg" alt="Группа изображение 2" class="group-img-2">
+                <p id="group-text" class="group-text description hidden"><span class="group-label">Группа: </span><br><span class="group-name">Б24УВКИ02</span></p>
+            </div>
+            
+            <!-- Контейнер кураторов -->
+            <div id="curators-container" class="curators-container">
+                <img id="curators-img-1" src="img/background_3-3_items/Сurators.svg" alt="Кураторы изображение 1" class="curators-img-1">
+                <img id="curators-img-2" src="img/background_3-3_items/Star_3.svg" alt="Кураторы изображение 2" class="curators-img-2">
+                <p id="curators-text" class="curators-text description hidden" style="text-align: right; margin-right: 0;">
+                    <span class="curators-label" style="display: inline-block; text-align: right;">:Кураторы</span><br>
+                    <span class="curators-name" style="display: inline-block; text-align: right;">Рихтер Камила</span><br>
+                    <span class="curators-name" style="display: inline-block; text-align: right;">Комкова Анна</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body> 
+</html>
