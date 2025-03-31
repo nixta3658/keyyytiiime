@@ -3,10 +3,10 @@
 @import "layout.css";
 @import "adaptive.css";
 @import "animation.css";
-@import "stylesheets/stylesheets/page_1.css"
-@import "stylesheets/stylesheets/page_2.css"
-@import "stylesheets/stylesheets/page_2-1.css"
-@import "stylesheets/stylesheets/page_2-2.css"
-@import "stylesheets/stylesheets/page_2-3.css"
-@import "stylesheets/stylesheets/page_3.css"
-@import "stylesheets/stylesheets/styles.css"
+@import "stylesheets/page_1.css"
+@import "stylesheets/page_2.css"
+@import "stylesheets/page_2-1.css"
+@import "stylesheets/page_2-2.css"
+@import "stylesheets/page_2-3.css"
+@import "stylesheets/page_3.css"
+@import "stylesheets/styles.css"
