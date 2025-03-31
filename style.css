@@ -1,9 +1,0 @@
-@import "reset.css";
-@import "fonts.css";
-@import "layout.css";
-@import "adaptive.css";
-@import "animation.css";
-
-body {
-  background-color: rgb(120, 112, 157);
-}
