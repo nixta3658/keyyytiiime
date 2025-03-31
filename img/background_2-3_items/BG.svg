@@ -1,0 +1,72 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_2022_1074)">
+<rect width="1920" height="1080" fill="white"/>
+<g clip-path="url(#clip1_2022_1074)">
+<rect width="2073.6" height="1296" transform="translate(-77 -108)" fill="black"/>
+<g filter="url(#filter0_f_2022_1074)">
+<ellipse cx="967.725" cy="1132.39" rx="1000.28" ry="489.709" transform="rotate(-22.7555 967.725 1132.39)" fill="#625E9D"/>
+</g>
+<g filter="url(#filter1_f_2022_1074)">
+<ellipse cx="-88.4276" cy="594.549" rx="146.781" ry="541.44" transform="rotate(-6.53545 -88.4276 594.549)" fill="#080535"/>
+</g>
+<g filter="url(#filter2_f_2022_1074)">
+<ellipse cx="190.841" cy="1149.12" rx="347.04" ry="411.84" fill="#080535"/>
+</g>
+<g filter="url(#filter3_f_2022_1074)">
+<ellipse cx="1630.84" cy="893.521" rx="671.04" ry="696.24" fill="#625E9D"/>
+</g>
+<g filter="url(#filter4_f_2022_1074)">
+<ellipse cx="1444.36" cy="756" rx="331.92" ry="269.28" transform="rotate(-8.7784 1444.36 756)" fill="#5A5B73"/>
+</g>
+<g filter="url(#filter5_f_2022_1074)">
+<ellipse cx="1169.03" cy="1290.92" rx="1426.32" ry="365.089" transform="rotate(-4.60076 1169.03 1290.92)" fill="#EFAAEA"/>
+</g>
+<g filter="url(#filter6_f_2022_1074)">
+<circle cx="1968.52" cy="1272.24" r="288.72" fill="#080535"/>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_f_2022_1074" x="-334.13" y="177.711" width="2603.71" height="1909.36" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="180" result="effect1_foregroundBlur_2022_1074"/>
+</filter>
+<filter id="filter1_f_2022_1074" x="-678.782" y="-375.637" width="1180.71" height="1940.37" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="216" result="effect1_foregroundBlur_2022_1074"/>
+</filter>
+<filter id="filter2_f_2022_1074" x="-588.199" y="305.281" width="1558.08" height="1687.68" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="216" result="effect1_foregroundBlur_2022_1074"/>
+</filter>
+<filter id="filter3_f_2022_1074" x="527.801" y="-234.719" width="2206.08" height="2256.48" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="216" result="effect1_foregroundBlur_2022_1074"/>
+</filter>
+<filter id="filter4_f_2022_1074" x="825.732" y="197.047" width="1237.26" height="1117.91" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="144" result="effect1_foregroundBlur_2022_1074"/>
+</filter>
+<filter id="filter5_f_2022_1074" x="-685.002" y="477.348" width="3708.06" height="1627.15" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="216" result="effect1_foregroundBlur_2022_1074"/>
+</filter>
+<filter id="filter6_f_2022_1074" x="1247.8" y="551.52" width="1441.44" height="1441.44" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="216" result="effect1_foregroundBlur_2022_1074"/>
+</filter>
+<clipPath id="clip0_2022_1074">
+<rect width="1920" height="1080" fill="white"/>
+</clipPath>
+<clipPath id="clip1_2022_1074">
+<rect width="2073.6" height="1296" fill="white" transform="translate(-77 -108)"/>
+</clipPath>
+</defs>
+</svg>
