@@ -1,0 +1,304 @@
+/* Стили для страницы 2-3 (Загрузка) */
+
+/* Основной контейнер страницы */
+#section-2-3 {
+    position: relative;
+}
+
+.loading-title {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 6vw;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+
+.loading-description {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 1.8vw;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 1;
+    width: 100%;
+}
+
+
+.slider-container {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: auto;
+    padding: 1vw 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.slider-line {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    max-height: 10vw;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    object-fit: contain;
+}
+
+
+.slider-range {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 5; 
+    margin: 0;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+}
+
+.slider-progress {
+    position: absolute;
+    left: 5.1vw;
+    top: 52%;
+    transform: translateY(-50%);
+    height: 1.7vw;
+    max-height: 40px;
+    border-radius: 1vw;
+    background-color: white;
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.7);
+    z-index: 3;
+    width: 0;
+    pointer-events: none;
+}
+
+
+.slider-thumb {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 11vw;
+    max-width: 110px;
+    height: 5.5vw;
+    max-height: 130px;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.7));
+    pointer-events: none;
+    z-index: 4;
+}
+
+
+.navigation-arrows {
+    position: absolute;
+    bottom: 9%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+    z-index: 1;
+}
+
+.arrow-back {
+    width: 5vw;
+    max-width: 100px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.arrow-next {
+    width: 5vw;
+    max-width: 100px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.arrow-back:hover {
+    transform: translateX(-10px);
+}
+
+.arrow-next:hover {
+    transform: translateX(10px);
+}
+
+.arrow-next.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Медиа-запросы для мобильных устройств */
+@media (max-width: 768px) {
+    .loading-title {
+        font-size: 8vw;
+    }
+    
+    .loading-description {
+        font-size: 4vw;
+    }
+    
+    .slider-container {
+        width: 90%;
+    }
+    
+    .slider-progress {
+        height: 3vw;
+    }
+    
+    .slider-thumb {
+        width: 15vw;
+        height: 15vw;
+    }
+    
+    .arrow-back, .arrow-next {
+        width: 10vw;
+    }
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 1024px) {
+    .loading-title {
+        font-size: 7vw;
+    }
+    
+    .loading-description {
+        font-size: 2.2vw;
+    }
+    
+    .slider-container {
+        width: 80%;
+    }
+    
+    .slider-line {
+        max-height: 12vw;
+    }
+    
+    .slider-thumb {
+        width: 6vw;
+    }
+    
+    .slider-fill {
+        height: 3vw;
+    }
+    
+    .percentage-display {
+        font-size: 5vw;
+    }
+}
+
+@media (max-width: 767px) {
+    .loading-title {
+        font-size: 8vw;
+    }
+    
+    .loading-description {
+        font-size: 2.8vw;
+        top: 22%;
+        white-space: normal;
+        width: 90%;
+    }
+    
+    .slider-container {
+        width: 85%;
+        top: 55%;
+    }
+    
+    .slider-line {
+        max-height: 15vw;
+    }
+    
+    .slider-thumb {
+        width: 8vw;
+    }
+    
+    .slider-fill {
+        height: 4vw;
+    }
+    
+    .percentage-display {
+        font-size: 6vw;
+        bottom: 25%;
+    }
+}
+
+@media (max-width: 480px) {
+    .loading-title {
+        font-size: 9vw;
+        top: 8%;
+        white-space: normal;
+        width: 90%;
+    }
+    
+    .loading-description {
+        font-size: 3.5vw;
+        top: 20%;
+        white-space: normal;
+        width: 80%;
+    }
+    
+    .slider-container {
+        width: 90%;
+        top: 50%;
+    }
+    
+    .slider-line {
+        max-height: 18vw;
+    }
+    
+    .slider-thumb {
+        width: 10vw;
+    }
+    
+    .slider-fill {
+        height: 5vw;
+    }
+    
+    .percentage-display {
+        font-size: 7vw;
+        bottom: 20%;
+    }
+}
+
+/* Мобильные устройства в альбомной ориентации */
+@media (max-height: 480px) and (orientation: landscape) {
+    .loading-title {
+        font-size: 6vw;
+        top: 10%;
+    }
+    
+    .loading-description {
+        font-size: 2.2vw;
+        top: 28%;
+    }
+    
+    .slider-container {
+        top: 65%;
+        width: 70%;
+    }
+    
+    .slider-line {
+        max-height: 10vw;
+    }
+    
+    .slider-thumb {
+        width: 5vw;
+    }
+    
+    .percentage-display {
+        font-size: 5vw;
+        bottom: 15%;
+    }
+}

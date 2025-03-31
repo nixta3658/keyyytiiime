@@ -1,0 +1,320 @@
+/* Стили для страницы 2-2 */
+
+
+#section-2-2 {
+    position: relative;
+    overflow: visible;
+    background-color: transparent;
+}
+
+
+.keyhole-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 15vw;
+    max-width: 300px;
+    height: 15vw;
+    max-height: 300px;
+    z-index: 1;
+}
+
+.keyhole-closed, .keyhole-open {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease;
+}
+
+.keyhole-open {
+    opacity: 0;
+}
+
+
+.puzzle-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.puzzle-piece {
+    position: absolute;
+    cursor: grab;
+    user-select: none;
+    -webkit-user-drag: none;
+    border: none;
+    outline: none;
+    background: transparent;
+    touch-action: none;
+}
+
+
+.puzzle-piece:active {
+    cursor: grabbing;
+}
+
+
+.puzzle-1 {
+    top: 0;
+    left: 0%;
+    width: 60vw;
+    max-width: 600px;
+    z-index: 10;
+}
+
+.puzzle-2 {
+    top: 0;
+    left: -20%;
+    width: 90vw;
+    max-width: 800px;
+    z-index: 9;
+}
+
+.puzzle-3 {
+    top: 0;
+    right: -5%;
+    width: 25vw;
+    max-width: 500px;
+    z-index: 7;
+}
+
+.puzzle-4 {
+    bottom: 0;
+    right: -12%;
+    width: 88vw;
+    max-width: 600px;
+    z-index: 1;
+}
+
+.puzzle-5 {
+    bottom: 0;
+    left: -9%;
+    width: 92vw;
+    max-width: 700px;
+    z-index: 11;
+}
+
+.puzzle-6 {
+    bottom: 0;
+    right: 0;
+    width: 40vw;
+    max-width: 600px;
+    z-index: 10;
+}
+
+.puzzle-7 {
+    top: -2%;
+    right: 4%;
+    width: 56vw;
+    max-width: 600px;
+    z-index: 12;
+}
+
+.puzzle-8 {
+    left: -10%;
+    bottom: 10%;
+    width: 40vw;
+    max-width: 600px;
+}
+
+
+.key {
+    position: absolute;
+    bottom: 20%;
+    left: 65%;
+    width: 15vw;
+    max-width: 300px;
+    cursor: grab;
+    user-select: none;
+    -webkit-user-drag: none;
+    z-index: -10;
+    border: none;
+    outline: none;
+    background: transparent;
+    touch-action: none;
+}
+
+
+.key:active {
+    cursor: grabbing;
+}
+
+
+.drag-instruction {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 1.5vw;
+    text-align: center;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.drag-instruction.show {
+    opacity: 1;
+}
+
+/* Медиа-запросы для мобильных устройств */
+@media (max-width: 1024px) {
+    .keyhole-container {
+        width: 20vw;
+        height: 20vw;
+    }
+    
+    .puzzle-1 {
+        width: 65vw;
+    }
+    
+    .puzzle-2 {
+        width: 95vw;
+    }
+    
+    .puzzle-3 {
+        width: 30vw;
+    }
+    
+    .puzzle-4 {
+        width: 93vw;
+    }
+    
+    .puzzle-5 {
+        width: 97vw;
+    }
+    
+    .puzzle-6 {
+        width: 45vw;
+    }
+    
+    .puzzle-7 {
+        width: 61vw;
+    }
+}
+
+@media (max-width: 767px) {
+    .keyhole-container {
+        width: 25vw;
+        height: 25vw;
+    }
+    
+    .puzzle-1 {
+        width: 70vw;
+        left: 5%;
+    }
+    
+    .puzzle-2 {
+        width: 100vw;
+        left: -15%;
+    }
+    
+    .puzzle-3 {
+        width: 35vw;
+        right: 0;
+    }
+    
+    .puzzle-4 {
+        width: 98vw;
+        right: -8%;
+    }
+    
+    .puzzle-5 {
+        width: 102vw;
+        left: -5%;
+    }
+    
+    .puzzle-6 {
+        width: 50vw;
+    }
+    
+    .puzzle-7 {
+        width: 66vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .keyhole-container {
+        width: 30vw;
+        height: 30vw;
+    }
+    
+    .puzzle-1 {
+        width: 80vw;
+        left: 10%;
+    }
+    
+    .puzzle-2 {
+        width: 110vw;
+        left: -10%;
+    }
+    
+    .puzzle-3 {
+        width: 40vw;
+        right: 5%;
+    }
+    
+    .puzzle-4 {
+        width: 103vw;
+        right: -5%;
+    }
+    
+    .puzzle-5 {
+        width: 107vw;
+        left: 0;
+    }
+    
+    .puzzle-6 {
+        width: 55vw;
+    }
+    
+    .puzzle-7 {
+        width: 71vw;
+    }
+}
+
+/* Мобильные устройства в альбомной ориентации */
+@media (max-height: 480px) and (orientation: landscape) {
+    .keyhole-container {
+        width: 18vw;
+        height: 18vw;
+    }
+    
+    .puzzle-piece {
+        transform: scale(0.8);
+    }
+    
+    .puzzle-1 {
+        width: 55vw;
+    }
+    
+    .puzzle-2 {
+        width: 85vw;
+    }
+    
+    .puzzle-3 {
+        width: 25vw;
+    }
+    
+    .puzzle-4 {
+        width: 83vw;
+    }
+    
+    .puzzle-5 {
+        width: 87vw;
+    }
+    
+    .puzzle-6 {
+        width: 35vw;
+    }
+    
+    .puzzle-7 {
+        width: 51vw;
+    }
+}
