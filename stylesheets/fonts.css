@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Nuqun';
+    src: url('../fonts/Nuqun-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PT-Root-UI';
+    src: url('../fonts/PT-Root-UI_Regular.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
