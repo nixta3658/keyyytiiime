@@ -1,1 +1,28 @@
+@keyframes moveRight {
+    0% { transform: translateX(-230%); }
+    100% { transform: translateX(800%); }
+}
+
+@keyframes handFade {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+@keyframes fireGrowing {
+    0% { transform: scale(1) translateY(0); }
+    50% { transform: scale(1.2) translateY(-5px); }
+    100% { transform: scale(1) translateY(0); }
+}
+
+@keyframes starRotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes starFade {
+    0% { opacity: 0.15; }
+    50% { opacity: 1; }
+    100% { opacity: 0.15; }
+}
 
