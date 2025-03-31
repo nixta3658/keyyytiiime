@@ -1,0 +1,301 @@
+/* Стили для второй страницы */
+
+/* Основной контейнер страницы */
+#page-2 {
+    position: relative;
+}
+
+/* Стили для заголовка страницы */
+.access-title {
+    position: absolute;
+    top: -280%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 6vw;
+    text-align: center;
+    white-space: nowrap;
+    letter-spacing: 0.4vw;
+    z-index: 1;
+}
+
+/* Стили для подзаголовка с инструкцией */
+.access-instruction {
+    position: absolute;
+    top: -120%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 1.5vw;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+/* Контейнер для ввода кода */
+.code-input-container {
+    position: absolute;
+    top: 23%;
+    left: 49%;
+    transform: translateX(-50%);
+    width: 10vw;
+    max-width: 800px;
+    height: 3.5vw;
+    border: 0.15vw solid white;
+    border-radius: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+/* Текст с введенным кодом */
+.code-input-display {
+    color: white;
+    font-size: 2.3vw;
+    text-align: center;
+    letter-spacing: 0.3vw;
+}
+
+/* Контейнер цифровой клавиатуры */
+.numpad-container {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 0.1vw;
+    width: 30vw;
+    max-width: 400px;
+    max-height: 500px;
+    z-index: 1;
+}
+
+/* Стили для цифровых кнопок */
+.numpad-button {
+    width: 12vw;
+    max-width: 120px;
+    height: 12vw;
+    max-height: 120px;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.numpad-button:hover {
+    transform: scale(1.05);
+}
+
+.numpad-button img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.numpad-btn-clicked {
+    display: none;
+}
+
+/* Особое позиционирование для кнопки 0 */
+.numpad-button[data-value="0"] {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+/* Стили для кнопок навигации */
+.navigation-arrows {
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+    z-index: 1;
+}
+
+.arrow-back {
+    width: 5vw;
+    top: 0%;
+    left: 0%;
+    max-width: 100px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.arrow-next {
+    position: absolute;
+    top: 0%;
+    left: 88%;
+    width: 5vw;
+    max-width: 100px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.arrow-back:hover {
+    transform: translateX(-10px);
+}
+
+.arrow-next:hover {
+    transform: translateX(10px);
+}
+
+.arrow-next.hidden {
+    display: none;
+}
+
+/* Сообщение об ошибке */
+.error-message {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ff5555;
+    font-size: 1.4vw;
+    text-align: center;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.error-message.show {
+    opacity: 1;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    .access-title {
+        font-size: 8vw;
+    }
+    
+    .access-instruction {
+        font-size: 4vw;
+    }
+    
+    .code-input-container {
+        width: 70vw;
+        height: 10vw;
+    }
+    
+    .code-input-display {
+        font-size: 6vw;
+    }
+    
+    .numpad-container {
+        width: 80vw;
+        grid-gap: 2vw;
+    }
+    
+    .numpad-button {
+        width: 15vw;
+        height: 15vw;
+    }
+    
+    .arrow-back, .arrow-next {
+        width: 10vw;
+    }
+}
+
+/* Адаптивность для страницы 2 */
+/* Большие планшеты (от 768px до 1024px) */
+@media (max-width: 1024px) {
+    /* Общие стили для страницы 2 */
+    .access-title {
+        font-size: 6vw;
+    }
+    
+    .access-instruction {
+        font-size: 3vw;
+    }
+    
+    .code-input-container {
+        width: 70%;
+    }
+    
+    .code-input-display {
+        font-size: 6vw;
+    }
+    
+    .numpad-container {
+        width: 60%;
+    }
+    
+    .numpad-button {
+        width: 30%;
+    }
+}
+
+/* Планшеты и большие мобильные устройства (от 481px до 767px) */
+@media (max-width: 767px) {
+    /* Общие стили для страницы 2 */
+    .access-title {
+        font-size: 7vw;
+    }
+    
+    .access-instruction {
+        font-size: 3.5vw;
+    }
+    
+    .code-input-container {
+        width: 80%;
+    }
+    
+    .code-input-display {
+        font-size: 7vw;
+    }
+    
+    .error-message {
+        font-size: 3.5vw;
+    }
+}
+
+/* Мобильные устройства (до 480px) */
+@media (max-width: 480px) {
+    /* Общие стили для страницы 2 */
+    .access-title {
+        font-size: 8vw;
+        white-space: normal;
+        width: 90%;
+    }
+    
+    .access-instruction {
+        font-size: 4vw;
+        white-space: normal;
+        width: 90%;
+        margin-bottom: 5vh;
+    }
+    
+    .code-input-container {
+        width: 90%;
+    }
+    
+    .code-input-display {
+        font-size: 8vw;
+        padding: 10px;
+    }
+    
+    .error-message {
+        font-size: 4vw;
+        white-space: normal;
+        width: 90%;
+    }
+}
+
+/* Мобильные устройства в альбомной ориентации */
+@media (max-height: 480px) and (orientation: landscape) {
+    .access-title {
+        margin-top: 5vh;
+    }
+    
+    .numpad-container {
+        width: 50%;
+    }
+    
+    .numpad-button {
+        height: 10vh;
+    }
+}

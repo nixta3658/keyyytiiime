@@ -1,0 +1,253 @@
+/* Стили для страницы 2-1 */
+
+/* Основной контейнер страницы */
+#section-2-1 {
+    position: relative;
+}
+
+
+/* Стили для заголовка страницы */
+.redirect-title {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 6vw;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+/* Стили для подзаголовка */
+.redirect-description {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 3.3vw;
+    text-align: center;
+    z-index: 1;
+}
+
+/* Контейнер для блоков с цифрами */
+.number-blocks-container {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+    z-index: 1;
+}
+
+/* Стили для блоков с цифрами */
+.number-block {
+    width: 8vw;
+    max-width: 150px;
+    height: 8vw;
+    max-height: 200px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Стили для цифр внутри блоков */
+.number-display {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5vw;
+    font-family: 'Nuqun', sans-serif;
+    color: #808491; /* Серый цвет для введенных цифр */
+    transition: color 0.3s ease;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+}
+
+/* Черный цвет для цифр после заполнения всех блоков */
+.all-filled .number-display {
+    color: #000;
+}
+
+/* Стрелка "Далее" */
+.next-arrow-2-1 {
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    width: 5vw;
+    max-width: 100px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    z-index: 1;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.next-arrow-2-1:hover {
+    transform: translateX(10px);
+}
+
+.next-arrow-2-1.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Дополнительная информация внизу страницы */
+.years-ago-text {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 2.5vw;
+    text-align: center;
+    z-index: 1;
+}
+
+/* Медиа-запросы для мобильных устройств */
+@media (max-width: 768px) {
+    .redirect-title {
+        font-size: 8vw;
+    }
+    
+    .redirect-description {
+        font-size: 5vw;
+    }
+    
+    .number-blocks-container {
+        gap: 2vw;
+    }
+    
+    .number-block {
+        width: 12vw;
+        height: 18vw;
+    }
+    
+    .number-display {
+        font-size: 7vw;
+    }
+    
+    .years-ago-text {
+        font-size: 4vw;
+    }
+}
+
+/* Маленькие планшеты и большие мобильные устройства */
+@media (max-width: 640px) {
+    .redirect-title {
+        font-size: 9vw;
+        top: 8%;
+    }
+    
+    .redirect-description {
+        font-size: 5.5vw;
+        top: 35%;
+    }
+    
+    .number-blocks-container {
+        top: 55%;
+        gap: 2.5vw;
+    }
+    
+    .number-block {
+        width: 14vw;
+        height: 20vw;
+    }
+    
+    .number-display {
+        font-size: 8vw;
+    }
+    
+    .years-ago-text {
+        font-size: 4.5vw;
+        bottom: 15%;
+    }
+    
+    .next-arrow-2-1 {
+        width: 8vw;
+    }
+}
+
+/* Мобильные устройства */
+@media (max-width: 480px) {
+    .redirect-title {
+        font-size: 10vw;
+        top: 6%;
+        white-space: normal;
+        width: 90%;
+    }
+    
+    .redirect-description {
+        font-size: 6vw;
+        top: 30%;
+        white-space: normal;
+        width: 90%;
+    }
+    
+    .number-blocks-container {
+        top: 50%;
+        gap: 3vw;
+    }
+    
+    .number-block {
+        width: 16vw;
+        height: 22vw;
+    }
+    
+    .number-display {
+        font-size: 9vw;
+    }
+    
+    .years-ago-text {
+        font-size: 5vw;
+        bottom: 10%;
+        white-space: normal;
+        width: 80%;
+    }
+    
+    .next-arrow-2-1 {
+        width: 10vw;
+        bottom: 5%;
+    }
+}
+
+/* Мобильные устройства в альбомной ориентации */
+@media (max-height: 480px) and (orientation: landscape) {
+    .redirect-title {
+        top: 5%;
+        font-size: 7vw;
+    }
+    
+    .redirect-description {
+        top: 30%;
+        font-size: 4vw;
+    }
+    
+    .number-blocks-container {
+        top: 60%;
+    }
+    
+    .number-block {
+        width: 10vw;
+        height: 10vw;
+    }
+    
+    .number-display {
+        font-size: 6vw;
+    }
+    
+    .years-ago-text {
+        font-size: 3.5vw;
+    }
+} 

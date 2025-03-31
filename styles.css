@@ -1,0 +1,210 @@
+/* Подключение шрифтов */
+@font-face {
+    font-family: 'Nuqun';
+    src: url('../fonts/Nuqun-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PT-Root-UI';
+    src: url('../fonts/PT-Root-UI_Regular.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+/* Сброс стилей */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'PT-Root-UI', sans-serif;
+    overflow-x: hidden;
+    background-color: #000; /* Черный фон на уровне body */
+    margin: 0;
+    padding: 0;
+}
+
+/* Стили для контейнера страницы */
+.page-container {
+    position: relative;
+    width: 100%;
+    background-color: transparent;
+}
+
+/* Стили для секций внутри вертикальной страницы */
+.section {
+    position: relative;
+    width: 100%;
+    /* aspect-ratio: 16/9; */
+    overflow: hidden;
+    background-color: transparent;
+}
+
+/* Скрытие элементов по умолчанию */
+.hidden {
+    display: none;
+}
+
+/* Футуристический текст */
+.futuristic-text {
+    font-family: 'Nuqun', sans-serif;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 0.3vw;
+}
+
+/* Описание */
+.description {
+    font-family: 'PT-Root-UI', sans-serif;
+}
+
+/* Адаптивность для соотношения экрана */
+@media (min-aspect-ratio: 16/9) {
+    .section {
+        width: calc(100vh * 16 / 9);
+        height: 100vh;
+        margin: 0 auto;
+        background-size: 100vw auto;
+        background-position: center center;
+    }
+    
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .section {
+        width: 100vw;
+    }
+}
+
+/* Общие стили для всех изображений внутри контейнеров */
+.page-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Плавный скролл */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Адаптивность для мобильных устройств */
+/* Большие планшеты (от 768px до 1024px) */
+@media (max-width: 1024px) {
+    .futuristic-text {
+        font-size: 4vw;
+    }
+    
+    .description {
+        font-size: 2vw;
+    }
+    
+    .section {
+        height: auto;
+        min-height: 100vh;
+    }
+    
+    body {
+        font-size: 16px;
+    }
+}
+
+/* Планшеты и большие мобильные устройства (от 481px до 767px) */
+@media (max-width: 767px) {
+    .futuristic-text {
+        font-size: 5vw;
+        letter-spacing: 0.2vw;
+    }
+    
+    .description {
+        font-size: 3vw;
+    }
+    
+    .section {
+        background-size: cover;
+        height: auto;
+        min-height: 100vh;
+    }
+    
+    body {
+        font-size: 14px;
+    }
+    
+    /* Улучшение скролла на мобильных устройствах */
+    html, body {
+        scroll-snap-type: none;
+    }
+    
+    .section {
+        scroll-snap-align: none;
+    }
+}
+
+/* Мобильные устройства (до 480px) */
+@media (max-width: 480px) {
+    .futuristic-text {
+        font-size: 7vw;
+        letter-spacing: 0.1vw;
+    }
+    
+    .description {
+        font-size: 4vw;
+    }
+    
+    .section {
+        background-position: center;
+        height: auto;
+        min-height: 100vh;
+    }
+    
+    body {
+        font-size: 12px;
+    }
+    
+    /* Уменьшаем масштаб элементов для маленьких экранов */
+    .page-container img:not(.background-image) {
+        max-width: 90%;
+    }
+}
+
+/* Мобильные устройства в портретной ориентации */
+@media (max-width: 480px) and (orientation: portrait) {
+    .section {
+        min-height: 100vh;
+    }
+}
+
+/* Мобильные устройства в альбомной ориентации */
+@media (max-height: 480px) and (orientation: landscape) {
+    .section {
+        min-height: 120vh;
+    }
+}
+
+/* Поддержка режима темной темы */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #000;
+        color: #fff;
+    }
+}
+
+/* Для доступности - увеличенные шрифты */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+    
+    * {
+        transition: none !important;
+        animation: none !important;
+    }
+}
